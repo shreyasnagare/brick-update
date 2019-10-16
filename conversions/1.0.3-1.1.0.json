@@ -95,6 +95,134 @@
     {
       "description": "Remove brickframe:relationships",
       "query": "DELETE{ ?subject ?predicate ?object . } WHERE { ?subject  ?predicate  ?object . FILTER (isURI(?predicate) && STRSTARTS(str(?predicate), str(brickframe:) ) )}"
+    },
+    {
+      "description": "Add brick:Return_Fan_Air_Flow_Sensor",
+      "query": "INSERT{ ?subject ?predicate brick:Return_Fan_Air_Flow_Sensor . } WHERE { ?subject  ?predicate  brick:Return_Fan_Air_Flow . }"
+    },
+    {
+      "description": "Remove brick:Return_Fan_Air_Flow",
+      "query": "DELETE{ ?subject ?predicate brick:Return_Fan_Air_Flow . } WHERE { ?subject  ?predicate  brick:Return_Fan_Air_Flow . }"
+    },
+    {
+      "description": "Add brick:Return_Fan_Differential_Speed_Setpoint",
+      "query": "INSERT{ ?subject ?predicate brick:Return_Fan_Differential_Speed_Setpoint . } WHERE { ?subject  ?predicate  brick:Return_Fan_Differential_Speed . }"
+    },
+    {
+      "description": "Remove brick:Return_Fan_Differential_Speed",
+      "query": "DELETE{ ?subject ?predicate brick:Return_Fan_Differential_Speed . } WHERE { ?subject  ?predicate  brick:Return_Fan_Differential_Speed . }"
+    },
+    {
+      "description": "Add brick:Booster_Fan_Air_Flow_Sensor",
+      "query": "INSERT{ ?subject ?predicate brick:Booster_Fan_Air_Flow_Sensor . } WHERE { ?subject  ?predicate  brick:Booster_Fan_Air_Flow . }"
+    },
+    {
+      "description": "Remove brick:Booster_Fan_Air_Flow",
+      "query": "DELETE{ ?subject ?predicate brick:Booster_Fan_Air_Flow . } WHERE { ?subject  ?predicate  brick:Booster_Fan_Air_Flow . }"
+    },
+    {
+      "description": "Add brick:Exhaust_Fan_Enable_Command",
+      "query": "INSERT{ ?subject ?predicate brick:Exhaust_Fan_Enable_Command . } WHERE { ?subject  ?predicate  brick:Exhaust_Fan_Enable . }"
+    },
+    {
+      "description": "Remove brick:Exhaust_Fan_Enable",
+      "query": "DELETE{ ?subject ?predicate brick:Exhaust_Fan_Enable . } WHERE { ?subject  ?predicate  brick:Exhaust_Fan_Enable . }"
+    },
+    {
+      "description": "Add brick:Exhaust_Fan_Disable_Command",
+      "query": "INSERT{ ?subject ?predicate brick:Exhaust_Fan_Disable_Command . } WHERE { ?subject  ?predicate  brick:Exhaust_Fan_Disable . }"
+    },
+    {
+      "description": "Remove brick:Exhaust_Fan_Disable",
+      "query": "DELETE{ ?subject ?predicate brick:Exhaust_Fan_Disable . } WHERE { ?subject  ?predicate  brick:Exhaust_Fan_Disable . }"
+    },
+    {
+      "description": "Add brick:Chilled_Water_Differential_Pressure_Proportional_Band_Parameter",
+      "query": "INSERT{ ?subject ?predicate brick:Chilled_Water_Differential_Pressure_Proportional_Band_Parameter . } WHERE { ?subject  ?predicate  brick:Chilled_Water_Pump_Differential_Pressure_Proportional_Band . }"
+    },
+    {
+      "description": "Remove brick:Chilled_Water_Pump_Differential_Pressure_Proportional_Band",
+      "query": "DELETE{ ?subject ?predicate brick:Chilled_Water_Pump_Differential_Pressure_Proportional_Band . } WHERE { ?subject  ?predicate  brick:Chilled_Water_Pump_Differential_Pressure_Proportional_Band . }"
+    },
+    {
+      "description": "Add brick:Chilled_Water_Pump",
+      "query": "INSERT{ ?subject ?predicate brick:Chilled_Water_Pump . } WHERE { ?subject  ?predicate  brick:Chilled_Water_Pump_Enable . }"
+    },
+    {
+      "description": "Remove brick:Chilled_Water_Pump_Enable",
+      "query": "DELETE{ ?subject ?predicate brick:Chilled_Water_Pump_Enable . } WHERE { ?subject  ?predicate  brick:Chilled_Water_Pump_Enable . }"
+    },
+    {
+      "description": "Add brick:Supply_Air_Temperature_Proportional_Band_Parameter",
+      "query": "INSERT{ ?subject ?predicate brick:Supply_Air_Temperature_Proportional_Band_Parameter . } WHERE { ?subject  ?predicate  brick:Economizer_Supply_Air_Temperature_Proportional_Band . }"
+    },
+    {
+      "description": "Remove brick:Economizer_Supply_Air_Temperature_Proportional_Band",
+      "query": "DELETE{ ?subject ?predicate brick:Economizer_Supply_Air_Temperature_Proportional_Band . } WHERE { ?subject  ?predicate  brick:Economizer_Supply_Air_Temperature_Proportional_Band . }"
+    },
+    {
+      "description": "Add brick:Discharge_Air_Temperature_Proportional_Band_Parameter",
+      "query": "INSERT{ ?subject ?predicate brick:Discharge_Air_Temperature_Proportional_Band_Parameter . } WHERE { ?subject  ?predicate  brick:Economizer_Discharge_Air_Temperature_Proportional_Band . }"
+    },
+    {
+      "description": "Remove brick:Economizer_Discharge_Air_Temperature_Proportional_Band",
+      "query": "DELETE{ ?subject ?predicate brick:Economizer_Discharge_Air_Temperature_Proportional_Band . } WHERE { ?subject  ?predicate  brick:Economizer_Discharge_Air_Temperature_Proportional_Band . }"
+    },
+    {
+      "description": "Add brick:Variable_Air_Volume_Box",
+      "query": "INSERT{ ?subject ?predicate brick:Variable_Air_Volume_Box . } WHERE { ?subject  ?predicate  brick:Variable_Air_Volume . }"
+    },
+    {
+      "description": "Remove brick:Variable_Air_Volume",
+      "query": "DELETE{ ?subject ?predicate brick:Variable_Air_Volume . } WHERE { ?subject  ?predicate  brick:Variable_Air_Volume . }"
+    },
+    {
+      "description": "Add brick:Hot_Water_System",
+      "query": "INSERT{ ?subject ?predicate brick:Hot_Water_System . } WHERE { ?subject  ?predicate  brick:Domestic_Hot_Water_System . }"
+    },
+    {
+      "description": "Remove brick:Domestic_Hot_Water_System",
+      "query": "DELETE{ ?subject ?predicate brick:Domestic_Hot_Water_System . } WHERE { ?subject  ?predicate  brick:Domestic_Hot_Water_System . }"
+    },
+    {
+      "description": "Add brick:Return_Air_Flow_Sensor",
+      "query": "INSERT{ ?subject ?predicate brick:Return_Air_Flow_Sensor . } WHERE { ?subject  ?predicate  brick:Return_Air_Flow . }"
+    },
+    {
+      "description": "Remove brick:Return_Air_Flow",
+      "query": "DELETE{ ?subject ?predicate brick:Return_Air_Flow . } WHERE { ?subject  ?predicate  brick:Return_Air_Flow . }"
+    },
+    {
+      "description": "Add brick:Return_Air_Enthalpy_Sensor",
+      "query": "INSERT{ ?subject ?predicate brick:Return_Air_Enthalpy_Sensor . } WHERE { ?subject  ?predicate  brick:Return_Air_Enthalpy . }"
+    },
+    {
+      "description": "Remove brick:Return_Air_Enthalpy",
+      "query": "DELETE{ ?subject ?predicate brick:Return_Air_Enthalpy . } WHERE { ?subject  ?predicate  brick:Return_Air_Enthalpy . }"
+    },
+    {
+      "description": "Add brick:Emergency_Power_Off_Activated_By_High_Temperature_Status",
+      "query": "INSERT{ ?subject ?predicate brick:Emergency_Power_Off_Activated_By_High_Temperature_Status . } WHERE { ?subject  ?predicate  brick:Emergency_Power_Off_Activated_By_High_Temperature . }"
+    },
+    {
+      "description": "Remove brick:Emergency_Power_Off_Activated_By_High_Temperature",
+      "query": "DELETE{ ?subject ?predicate brick:Emergency_Power_Off_Activated_By_High_Temperature . } WHERE { ?subject  ?predicate  brick:Emergency_Power_Off_Activated_By_High_Temperature . }"
+    },
+    {
+      "description": "Add brick:High_Temperature_Hot_Water_Supply_Temperature_Sensor",
+      "query": "INSERT{ ?subject ?predicate brick:High_Temperature_Hot_Water_Supply_Temperature_Sensor . } WHERE { ?subject  ?predicate  brick:High_Temperature_Hot_Water_Supply_Temperature . }"
+    },
+    {
+      "description": "Remove brick:High_Temperature_Hot_Water_Supply_Temperature",
+      "query": "DELETE{ ?subject ?predicate brick:High_Temperature_Hot_Water_Supply_Temperature . } WHERE { ?subject  ?predicate  brick:High_Temperature_Hot_Water_Supply_Temperature . }"
+    },
+    {
+      "description": "Add brick:Vent_Operating_Mode_Status",
+      "query": "INSERT{ ?subject ?predicate brick:Vent_Operating_Mode_Status . } WHERE { ?subject  ?predicate  brick:Vent_Operating_Mode . }"
+    },
+    {
+      "description": "Remove brick:Vent_Operating_Mode",
+      "query": "DELETE{ ?subject ?predicate brick:Vent_Operating_Mode . } WHERE { ?subject  ?predicate  brick:Vent_Operating_Mode . }"
     }
   ]
 }
