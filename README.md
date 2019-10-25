@@ -1,5 +1,10 @@
 # brick-update
 
+## Installing dependencies
+```bash
+pip3 install -r requirements.txt 
+```
+
 ## Help
 ```bash
 python3 update.py --help     
